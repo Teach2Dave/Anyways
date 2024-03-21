@@ -1,6 +1,7 @@
 package com.cb.myapplication.examples
 
 fun main() {
+
     val myWatch = Watch()
     myWatch.model = "Casio"
     //myWatch.giveTheHour()
@@ -13,10 +14,7 @@ fun main() {
     val listOfWatch = listOf<Watch>(myWatch, mySmartWatch)
 
     listOfWatch.forEach { watch ->
-        if (watch is SmartWatch) {
-            watch.daddyGiveMeTheHourPlease()
-        }
-        watch.giveTheHour()
+        watch.onStarted()
     }
 
     // mySmartWatch.daddyGiveMeTheHourPlease()

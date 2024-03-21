@@ -14,4 +14,8 @@ class SmartWatch : Watch() {
     override fun giveTheHour() {
         println("The hours its today")
     }
+
+    override fun peek() {
+        println("$model peek do not apply here")
+    }
 }
