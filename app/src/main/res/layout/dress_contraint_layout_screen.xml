@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="32dp"
+        android:layout_weight="1"
+        android:text="Vestido con aplicacion tornal marfil"
+        app:layout_constraintBottom_toTopOf="@+id/rent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="$300 mxn"
+        app:layout_constraintBottom_toBottomOf="@+id/description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/description"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/rent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="#ffaa00"
+        android:text="Rentar Vestido"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#a0a0a0"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/description" />
+
+    <ImageView
+        android:id="@+id/brand_image"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elda Boutique"
+        app:layout_constraintStart_toEndOf="@+id/brand_image"
+        app:layout_constraintTop_toTopOf="@+id/brand_image" />
+
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ava Terranoza 726a , Prados Providenci"
+        app:layout_constraintEnd_toStartOf="@+id/show_more"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/brand_image"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/show_more"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="16dp"
+        android:background="#ffaa00"
+        android:text="Ver mas"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/title"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/primary_image_small"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="@+id/main_image"
+        app:layout_constraintStart_toStartOf="@+id/main_image"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/secondary_image_small"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@+id/primary_image_small"
+        app:layout_constraintStart_toStartOf="@+id/main_image"
+        tools:src="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

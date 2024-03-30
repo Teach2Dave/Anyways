@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/main_image_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/main_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:background="#aaffaa00"
+            tools:src="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/primary_image_small"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom"
+                android:background="#bbffaa00"
+                android:scaleType="center"
+                tools:src="@tools:sample/avatars" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="16dp"/>
+
+            <ImageView
+                android:id="@+id/secondary_image_small"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom"
+                android:background="#ccffaa00"
+                android:scaleType="center"
+                tools:src="@tools:sample/avatars" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/brand_image"
+                android:scaleType="centerCrop"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                tools:src="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Elda Boutique" />
+
+                <TextView
+                    android:id="@+id/subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ava Terranoza 726, Prados Providencia" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/show_more"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="#ffaa00"
+                android:textColor="@color/white"
+                android:text="Ver mas" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:background="#a0a0a0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="120dp"
+                android:layout_height="wrap_content"
+                android:text="Vestido con aplicacion tornal marfil" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$300 mxn" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/rent"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffaa00"
+            android:textColor="@color/white"
+            android:text="Rentar Vestido" />
+    </LinearLayout>
+</LinearLayout>
